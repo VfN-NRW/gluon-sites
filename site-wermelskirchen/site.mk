@@ -1,6 +1,8 @@
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-autoupdater \
+	gluon-offline-ssid \
+	gluon-legacy-https-stats \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
