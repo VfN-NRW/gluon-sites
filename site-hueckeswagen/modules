@@ -1,0 +1,7 @@
+GLUON_SITE_FEEDS='offlinessid legacystats'
+
+PACKAGES_OFFLINESSID_REPO=https://github.com/FF-NRW/offline-ssid.git
+PACKAGES_OFFLINESSID_COMMIT=ca433fec5ef47306c3600eb743c818a916e5f095
+
+PACKAGES_LEGACYSTATS_REPO=https://github.com/FF-NRW/legacy-stats.git
+PACKAGES_LEGACYSTATS_COMMIT=363ed77d98fa65c4daceec26cff4579d7cab305d
