@@ -27,5 +27,3 @@ DEFAULT_GLUON_RELEASE := 0.6.1pre+exp$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
-
-GLUON_BRANCH = stable
