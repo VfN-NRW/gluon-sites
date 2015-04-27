@@ -23,7 +23,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-authorized-keys
 
 
-DEFAULT_GLUON_RELEASE := 0.6.4-beta4
+DEFAULT_GLUON_RELEASE := 0.6.5-beta5
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
