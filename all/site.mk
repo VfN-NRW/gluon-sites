@@ -3,6 +3,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-autoupdater \
 	gluon-offline-ssid \
 	gluon-legacy-https-stats \
+	gluon-setup-mode \
+	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
