@@ -12,6 +12,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
+	gluon-luci-wifi-config \
 	gluon-luci-autoupdater \
 	gluon-luci-private-wifi \
 	gluon-luci-portconfig \
