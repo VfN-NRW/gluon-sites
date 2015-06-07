@@ -13,7 +13,7 @@ msgstr ""
 msgid "gluon-config-mode:welcome"
 msgstr ""
 "Willkommen zum Einrichtungsassistenten für deinen neuen Mülheimer"
-"Freifunk-Knoten. Fülle das folgende Formular deinen Vorstellungen "
+" Freifunk-Knoten. Fülle das folgende Formular deinen Vorstellungen "
 "entsprechend aus und sende es ab."
 
 msgid "gluon-config-mode:pubkey"
