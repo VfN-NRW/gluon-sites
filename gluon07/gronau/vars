@@ -50,3 +50,4 @@ pubkeys="
 updateprobabilitybeta='0.08'
 city='Gronau'
 city2='Gronauer'
+additional_conf=''
