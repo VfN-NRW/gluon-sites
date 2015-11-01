@@ -21,7 +21,7 @@
 		channel = 5,
 		htmode = 'HT40-',
 		mesh_ssid = 'mesh-v15',
-		mesh_bssid = '02:ca:fe:15:21:44',
+		mesh_bssid = '+++meshmac+++',
 		mesh_mcast_rate = 6000,
 	},
 
@@ -30,7 +30,7 @@
 		channel = 44,
 		htmode = 'HT40+',
 		mesh_ssid = 'mesh-v15',
-		mesh_bssid = '02:ca:fe:15:21:44',
+		mesh_bssid = '+++meshmac+++',
 		mesh_mcast_rate = 6000,
 	},
 
