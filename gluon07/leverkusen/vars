@@ -38,3 +38,4 @@ pubkeys="
 updateprobabilitybeta='0.08'
 city='Leverkusen'
 city2='Leverkusener'
+additional_conf=''
