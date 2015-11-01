@@ -22,7 +22,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	haveged
+	haveged \
+	gluon-authorized-keys
 
 
 
