@@ -1,0 +1,105 @@
+{
+	site_name = '+++sitename+++',
+	site_code = '+++sitecode+++',
+
+	--[[	General network settings ]]
+	prefix4 = '+++prefix4+++',
+	prefix6 = '+++prefix6+++',
+
+
+	--[[	NTP settings ]]
+	timezone = 'CET-1CEST,M3.5.0,M10.5.0/3',
+	ntp_servers = {
+		'+++ntpserver+++'
+	},
+
+	--[[	Wireless settings ]]
+	regdom = 'DE',
+
+	wifi24 = {
+		ssid = '+++ssid+++',
+		channel = 5,
+		htmode = 'HT40-',
+		mesh_ssid = 'mesh-v15',
+		mesh_bssid = '02:ca:fe:15:21:44',
+		mesh_mcast_rate = 6000,
+	},
+
+	wifi5 = {
+		ssid = '+++ssid+++',
+		channel = 44,
+		htmode = 'HT40+',
+		mesh_ssid = 'mesh-v15',
+		mesh_bssid = '02:ca:fe:15:21:44',
+		mesh_mcast_rate = 6000,
+	},
+
+	--[[	Next-Node ]]
+	next_node = {
+		ip4 = '+++ip4nn+++',
+		ip6 = '+++ip6nn+++',
+		mac = 'da:ab:dd:7d:ff:ff',
+	},
+  
+  --[[  Network configurations ]]
+  mesh_on_wan = true,
+
+	--[[	Gateway settings ]]
+	fastd_mesh_vpn = {
+		enabled = true,
+		methods = {+++fastdmethods+++},
+		mtu = +++fastdmtu+++,
+		groups = {
+		  +++fastdpeergroups+++
+		},
+	},
+
+
+	--[[	Autoupdater settings ]]
+	autoupdater = {
+		branch = 'stable',
+		branches = {
+			stable = {
+				name = 'stable',
+				mirrors = {
+					'http://1.updates.+++domain+++/stable/sysupgrade',
+					'http://2.updates.+++domain+++/stable/sysupgrade',
+					'http://[+++updatesrv1ip6+++]/stable/sysupgrade/',
+					'http://[+++updatesrv2ip6+++]/stable/sysupgrade/',
+				},
+				probability = +++updateprobability+++,
+				good_signatures = 2,
+				pubkeys = {
+				  +++pubkeys+++
+				},
+			},
+			beta = {
+				name = 'beta',
+				mirrors = {
+					'http://1.updates.+++domain+++/beta/sysupgrade',
+					'http://2.updates.+++domain+++/beta/sysupgrade',
+					'http://[+++updatesrv1ip6+++]/beta/sysupgrade/',
+					'http://[+++updatesrv2ip6+++]/beta/sysupgrade/',
+				},
+				probability = +++updateprobabilitybeta+++,
+				good_signatures = 2,
+				pubkeys = {
+					+++pubkeys+++
+				},
+			},
+		},
+	},
+
+
+	--[[	Simple TC settings to limit the bandwidth of the vpn-uplink ]]
+	simple_tc = {
+		mesh_vpn = {
+			ifname = 'mesh-vpn',
+			enabled = false,
+			limit_egress = 200,
+			limit_ingress = 3000,
+		},
+	},
+}
+
+-- vim: filetype=lua
