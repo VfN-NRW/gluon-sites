@@ -1,0 +1,44 @@
+sitename='Freifunk Wermelskirchen'
+sitecode='wermelskirchen'
+prefix4='10.52.0.0/16'
+prefix6='fddf:ebfd:a801:2196::/64'
+ntpserver='fddf:ebfd:a801:2196::ac1'
+ssid='wk.freifunk.net'
+meshmac='02:ca:fe:15:21:96'
+meshid='ff15wk'
+ip4nn='10.52.0.1'
+ip6nn='fddf:ebfd:a801:2196:ffff::1'
+fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
+fastdmtu='1312'
+fastdpeergroups="
+  backbone = {
+    limit = 2,
+    peers = {
+      bragi = {
+        key = '7d0543ebafdde88978817d514c21b09b965540b0181096e27f672aae5232648f',
+        remotes = {'[2a03:4000:2:453::2] port 15052', '46.38.232.72 port 15052'},
+      },
+      rig = {
+        key = '1827f8a6a481ee5e3488d5888453d14943bd934dfa401bb9e43a44915e4ae3cf',
+        remotes = {'62.141.34.115 port 15052'},
+      },
+    },
+  },"
+
+domain='freifunk-wermelskirchen.de'
+updatesrv1ip6='fddf:ebfd:a801:2196::fff1'
+updatesrv2ip6='fddf:ebfd:a801:2196::fff2'
+updateprobability='0.08'
+pubkeys="
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
+  '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
+
+updateprobabilitybeta='0.08'
+city='Wermelskirchen'
+city2='Wermelskirchener'
+additional_conf="
+  setup_mode = {
+		skip = true,
+	}"

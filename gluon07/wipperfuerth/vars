@@ -1,0 +1,41 @@
+sitename='Freifunk Wipperfürth'
+sitecode='wipperfuerth'
+prefix4='10.224.0.0/16'
+prefix6='fddf:ebfd:a801:2267::/64'
+ntpserver='fddf:ebfd:a801:2267::ac1'
+ssid='wipp.freifunk.net'
+meshmac='02:ca:fe:15:22:67'
+meshid='ff15wipp'
+ip4nn='10.224.0.1'
+ip6nn='fddf:ebfd:a801:2267:ffff::1'
+fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
+fastdmtu='1312'
+fastdpeergroups="
+  backbone = {
+    limit = 2,
+    peers = {
+      bragi = {
+        key = 'd57c4409658033f6000b382f4c5a947c73ef43da957330de19c89ac355c4117b',
+        remotes = {'[2a03:4000:2:453::2] port 15224', '46.38.232.72 port 15224'},
+      },
+      rig = {
+        key = '4c42a5dbc9aa891c636ca9e09739188924643d35603bb9cbde18e6394e9a7d0c',
+        remotes = {'62.141.34.115 port 15224'},
+      },
+    },
+  },"
+
+domain='wipp.freifunk.net/'
+updatesrv1ip6='fddf:ebfd:a801:2267::fff1'
+updatesrv2ip6='fddf:ebfd:a801:2267::fff2'
+updateprobability='0.08'
+pubkeys="
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
+  '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
+
+updateprobabilitybeta='0.08'
+city='Wipperfürth'
+city2='Wipperfürther'
+additional_conf=''
