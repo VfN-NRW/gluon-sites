@@ -25,7 +25,7 @@ fastdpeergroups="
     },
   },"
 
-domain='wipp.freifunk.net/'
+domain='wipp.freifunk.net'
 updatesrv1ip6='fddf:ebfd:a801:2267::fff1'
 updatesrv2ip6='fddf:ebfd:a801:2267::fff2'
 updateprobability='0.08'
