@@ -32,7 +32,7 @@
 	},
 
 	wifi5 = {
-		channel = 44,
+		channel = 36,
 		htmode = 'HT40+',
 		ap = {
 			ssid = '+++ssid+++',
@@ -71,10 +71,14 @@
 			stable = {
 				name = 'stable',
 				mirrors = {
-					'http://1.updates.+++domain+++/stable/sysupgrade',
-					'http://2.updates.+++domain+++/stable/sysupgrade',
-					'http://[+++updatesrv1ip6+++]/stable/sysupgrade/',
-					'http://[+++updatesrv2ip6+++]/stable/sysupgrade/',
+					'http://[fddf:ebfd:a801:fff::1]/gluon/+++sitecode+++/stable/latest/',
+					'http://[fddf:ebfd:a801:fff::2]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:67c:1714:fff:1]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:67c:1714:fff:2]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:4ba0:92f3:300::100]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:41d0:2:b0db:1::67]/gluon/+++sitecode+++/stable/latest/',
+					'http://62.141.34.119/gluon/+++sitecode+++/stable/latest/',
+					'http://5.135.22.67/gluon/+++sitecode+++/stable/latest/',
 				},
 				probability = +++updateprobability+++,
 				good_signatures = 2,
@@ -82,15 +86,19 @@
 				  +++pubkeys+++
 				},
 			},
-			beta = {
-				name = 'beta',
+			rc = {
+				name = 'rc',
 				mirrors = {
-					'http://1.updates.+++domain+++/beta/sysupgrade',
-					'http://2.updates.+++domain+++/beta/sysupgrade',
-					'http://[+++updatesrv1ip6+++]/beta/sysupgrade/',
-					'http://[+++updatesrv2ip6+++]/beta/sysupgrade/',
+					'http://[fddf:ebfd:a801:fff::1]/gluon/+++sitecode+++/rc/latest/',
+					'http://[fddf:ebfd:a801:fff::2]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:67c:1714:fff:1]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:67c:1714:fff:2]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:4ba0:92f3:300::100]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:41d0:2:b0db:1::67]/gluon/+++sitecode+++/rc/latest/',
+					'http://62.141.34.119/gluon/+++sitecode+++/rc/latest/',
+					'http://5.135.22.67/gluon/+++sitecode+++/rc/latest/',
 				},
-				probability = +++updateprobabilitybeta+++,
+				probability = +++updateprobabilityrc+++,
 				good_signatures = 2,
 				pubkeys = {
 					+++pubkeys+++
