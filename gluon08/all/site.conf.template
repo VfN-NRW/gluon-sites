@@ -42,6 +42,7 @@
 			bssid = '+++meshmac+++',
 			mcast_rate = 6000,
 		},
+	},
 
 	--[[	Next-Node ]]
 	next_node = {
