@@ -1,5 +1,7 @@
 sitename='Freifunk Gronau'
 sitecode='gronau'
+city='Gronau'
+city2='Gronauer'
 prefix4='10.206.0.0/16'
 prefix6='fddf:ebfd:a801:4859::/64'
 ntpserver='fddf:ebfd:a801:4859::ac1'
@@ -11,35 +13,76 @@ ip6nn='fddf:ebfd:a801:4859:ffff::1'
 fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
 fastdmtu='1312'
 fastdpeergroups="
-	backbone = {
-		limit = 2,
-		peers = {
-			bragi = {
-				key = '64c2ad4d0e2ebb21cb368f9455f38149d12daff2232381c1e3afe0181ff7085e',
-				remotes = {'[2a03:4000:2:453::2] port 15206', '46.38.232.72 port 15206'},
+	    backbone = {
+				limit = 2,
+				peers = {
+					bragi = {
+						key = '64c2ad4d0e2ebb21cb368f9455f38149d12daff2232381c1e3afe0181ff7085e',
+						remotes = {'[2a03:4000:2:453::2] port 15206', '46.38.232.72 port 15206'},
+					},
+					bragiHMTU = {
+						key = 'efaf557e6a6a16272a69a6f573bd86f50ef856f1b0fd62ad3d0abca1bf87f2c6',
+						remotes = {'[2a03:4000:2:453::2] port 30206', '46.38.232.72 port 30206'},
+					},
+					rig = {
+						key = '546637954c9f2bd1657f97ea27ec73b304fa586f7f29509b886b9e818483a9eb',
+						remotes = {'[2001:4ba0:92f3:300::2] port 15206', '62.141.34.115 port 15206'},
+					},
+					rigHMTU = {
+						key = 'f6dffe2028052964383fe793e11fffb4c96cce336c56a58ea5e93aac34e6b774',
+						remotes = {'[2001:4ba0:92f3:300::2] port 30206', '62.141.34.115 port 30206'},
+					},
+					thor = {
+						key = '8f4a9a7d5fd83dda7e5983381279f08480b7483718b76c3e342dd19665362476',
+						remotes = {'[2a01:4f8:202:63d3::2] port 15206', '148.251.117.6 port 15206'},
+					},
+					thorHTMU = {
+						key = 'b8f2cfdc5744ae65f3142fd805d978fa9be149be16ca205f1018eb47379fce44',
+						remotes = {'[2a01:4f8:202:63d3::2] port 30206', '148.251.117.6 port 30206'},
+					},
+					zoidberg = {
+						key = 'aabf9bc318baae1cb32cc4a9b1a3802d6ff0024d5bcbd986b596a51e0e5d5396',
+						remotes = {'[2a06:9500:7:101::1] port 15206', '185.118.196.50 port 15206'},
+					},
+					zoidbergHMTU = {
+						key = '3aa0eaa61cfa0ec06dcedb62144e0c5436e8bcb6a7a186d57c3a8560d97c9b08',
+						remotes = {'[2a06:9500:7:101::1] port 30206', '185.118.196.50 port 30206'},
+					},
+					bender = {
+						key = '44aef90d87966a13e3be638ae1dd02cafda6e1022034a7b4690dcaa0019a297c',
+						remotes = {'[2a06:9500:7:102::1] port 15206', '185.118.197.50 port 15206'},
+					},
+					benderHMTU = {
+						key = '28515a24c3acf4889bc4067d652207fcf4325fa8ab454968dc9d522ce67f0451',
+						remotes = {'[2a06:9500:7:102::1] port 30206', '185.118.197.50 port 30206'},
+					},
+					horus = {
+						key = '4b282d6ef39c89962cf0dfc34b557621ac2b8c9e443f567e083d30c6752a4e0b',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15206', '5.135.22.66 port 15206'},
+					},
+					horusHMTU = {
+						key = '8208136f9a3da69b93a3e4264aba9bc807e19444a4562dc1b99e1a17e2d0cda7',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30206', '5.135.22.66 port 30206'},
+					},
+					frigg = {
+						key = 'e5eae1c972ef79805de5c62ed2d2b81736fd07c0380080316fc3064694eea334',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15206', '178.32.13.122 port 15206'},
+					},
+					friggHMTU = {
+						key = 'c4f32d2544de0ef439b4da09fcc6675c26f7b5d4e5fec8ff0b03bcd157e49b80',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30206', '178.32.13.122 port 30206'},
+					},
+				},
 			},
-			rig = {
-				key = '546637954c9f2bd1657f97ea27ec73b304fa586f7f29509b886b9e818483a9eb',
-				remotes = {'[2001:4ba0:92f3:300::2] port 15206', '62.141.34.115 port 15206'},
-			},
-			thor = {
-				key = '8f4a9a7d5fd83dda7e5983381279f08480b7483718b76c3e342dd19665362476',
-				remotes = {'148.251.117.6 port 15206'},
-			},
-		},
-	},
-	api = {
-		peers = {
-			buri = {
-				key = '119f4699859ce23368c73b964b6658539a492fe99c04813ee5f34be60def9d1d',
-				remotes = {'5.9.105.86 port 10699'},
-			},
-		},
-	},
+			api = {
+				peers = {
+					buri = {
+						key = '119f4699859ce23368c73b964b6658539a492fe99c04813ee5f34be60def9d1d',
+						remotes = {'5.9.105.86 port 10699'},
+					},
+				},
+			},"
 
-domain='freifunk-gronau.de'
-updatesrv1ip6='fddf:ebfd:a801:4859::fff1'
-updatesrv2ip6='fddf:ebfd:a801:4859::fff2'
 updateprobability='0.08'
 pubkeys="
   '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
@@ -48,9 +91,7 @@ pubkeys="
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)
   '4d4755f300a0023e5da1e3dda6168c89614cbd28fffff79a073327adc3897883', -- Sascha Bias (Freifunk Gronau)"
   
-updateprobabilitybeta='0.08'
-city='Gronau'
-city2='Gronauer'
+updateprobabilityrc='0.08'
 additional_conf="
   authorized_keys = {
 		'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBBEt6ZbQEUcGbthZIy2wqUHJeNrHF5yCLH/UVnAR9o8EbydYYsDGDwOjpEVpCImu7Nmtb9ZueZi+rjTdOAivgwOJi1ZDU8uYf6IRU9h6U+yzeY+kYFjdU1ZCLR/JQuzraxZydzJMedJLiClZOhELmiYBEGEim/el3NK0lS7HeFXCWAVcld3RBaC9g1GcyV6QZX+lTNCWwYejzyXP0kFYenOseXmjni2JJKJAgPDofCUL7OCoOMch3HC1G2+zc8b/wI8FtVdbm3AzwxwWzlhBs480DyB331KljWI/UKOPcQzY7vEeW5MMnd4fEF92THwUBE6uGp2we3u5HDGAkpFPj gronau@ff',

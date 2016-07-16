@@ -83,4 +83,7 @@ pubkeys="
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
   
 updateprobabilityrc='0.08'
-additional_conf=''
+additional_conf="
+  setup_mode = {
+		skip = true,
+	}"

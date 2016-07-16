@@ -1,5 +1,7 @@
 sitename='Freifunk Kürten'
 sitecode='kuerten'
+city='K&uuml;rten'
+city2='K&uuml;rtener'
 prefix4='10.16.0.0/17'
 prefix6='fddf:ebfd:a801:2268::/64'
 ntpserver='fddf:ebfd:a801:2268::ac1'
@@ -11,23 +13,68 @@ ip6nn='fddf:ebfd:a801:2268:ffff::1'
 fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
 fastdmtu='1312'
 fastdpeergroups="
-  backbone = {
-    limit = 2,
-    peers = {
-      bragi = {
-        key = 'b501238b8bb3b5304c647db9bc18a797b016d962662ccdc5ce901e38b160a9f5',
-        remotes = {'[2a03:4000:2:453::2] port 15016', '46.38.232.72 port 15016'},
-      },
-      rig = {
-        key = '4f82ae7f23ebe6c7e70baa1a561c8d4eba3feed3cd1bf684390d4902ab58d899',
-        remotes = {'[2001:4ba0:92f3:300::2] port 15016', '62.141.34.115 port 15016'},
-      },
-    },
-  },"
+        backbone = {
+				limit = 2,
+				peers = {
+					bragi = {
+						key = 'b501238b8bb3b5304c647db9bc18a797b016d962662ccdc5ce901e38b160a9f5',
+						remotes = {'[2a03:4000:2:453::2] port 15016', '46.38.232.72 port 15016'},
+					},
+					bragiHMTU = {
+						key = 'ee1a5bf88c59def8cfc25142323d95bef2f9ea5b786986b00219bde947c330c4',
+						remotes = {'[2a03:4000:2:453::2] port 30016', '46.38.232.72 port 30016'},
+					},
+					rig = {
+						key = '4f82ae7f23ebe6c7e70baa1a561c8d4eba3feed3cd1bf684390d4902ab58d899',
+						remotes = {'[2001:4ba0:92f3:300::2] port 15016', '62.141.34.115 port 15016'},
+					},
+					rigHMTU = {
+						key = '1fec93361bae6056dd25c5c9ae95c5f8afe891ff2ae7c6a1782d170b12e5bf30',
+						remotes = {'[2001:4ba0:92f3:300::2] port 30016', '62.141.34.115 port 30016'},
+					},
+					thor = {
+						key = 'dc9eae028b063f463be330edcbe1e80f8d25875caa95f95bb35d322d591c1e81',
+						remotes = {'[2a01:4f8:202:63d3::2] port 15016', '148.251.117.6 port 15016'},
+					},
+					thorHTMU = {
+						key = '026a3ca9ffc03d2141a38d95fde22a15dae0e11dbe75aae98985f92bdaaf8378',
+						remotes = {'[2a01:4f8:202:63d3::2] port 30016', '148.251.117.6 port 30016'},
+					},
+					zoidberg = {
+						key = '14d7c580ff1721d4b71f0c4948e37f2302b0bd61ea445ce5f350914f9bdd04d8',
+						remotes = {'[2a06:9500:7:101::1] port 15016', '185.118.196.50 port 15016'},
+					},
+					zoidbergHMTU = {
+						key = '46475648fad748865929313af5bd4f43b9e54f762afec26ab3c33dfb0f27d56b',
+						remotes = {'[2a06:9500:7:101::1] port 30016', '185.118.196.50 port 30016'},
+					},
+					bender = {
+						key = '3f1e90094a134fc286fdd261d19c89c52d57fff2bfe2a0b371e170a76b49f38b',
+						remotes = {'[2a06:9500:7:102::1] port 15016', '185.118.197.50 port 15016'},
+					},
+					benderHMTU = {
+						key = '5250cf97deb19c779e745bdb2bd2ba6fb3757c0f92d64f1529e1f0a12991b57a',
+						remotes = {'[2a06:9500:7:102::1] port 30016', '185.118.197.50 port 30016'},
+					},
+					horus = {
+						key = '7e55002c8affc214487710963d0419646227554fbf5f83271ee3e8764b59c971',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15016', '5.135.22.66 port 15016'},
+					},
+					horusHMTU = {
+						key = '2ee431520987447e59e98bbf4674a3deb5cc56fd41e0d9d209564316b66734cf',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30016', '5.135.22.66 port 30016'},
+					},
+					frigg = {
+						key = 'de59eeee179065156fb364fb93af684f15181fbb723069cd6001f7b95881787d',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15016', '178.32.13.122 port 15016'},
+					},
+					friggHMTU = {
+						key = 'c7e646968d5fc057aad5d1df8144744626c21118ccd8961c600ad3302c0e5851',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30016', '178.32.13.122 port 30016'},
+					},
+				},
+			},"
 
-domain='kuerten.freifunk.net'
-updatesrv1ip6='fddf:ebfd:a801:2268::fff1'
-updatesrv2ip6='fddf:ebfd:a801:2268::fff2'
 updateprobability='0.08'
 pubkeys="
   '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
@@ -35,7 +82,5 @@ pubkeys="
   'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
 
-updateprobabilitybeta='0.08'
-city='Kürten'
-city2='Kürtener'
+updateprobabilityrc='0.08'
 additional_conf=''

@@ -1,5 +1,7 @@
 sitename='Freifunk Wipperfürth'
 sitecode='wipperfuerth'
+city='Wipperf&uuml;rth'
+city2='Wipperf&uuml;rther'
 prefix4='10.224.0.0/16'
 prefix6='fddf:ebfd:a801:2267::/64'
 ntpserver='fddf:ebfd:a801:2267::ac1'
@@ -11,23 +13,69 @@ ip6nn='fddf:ebfd:a801:2267:ffff::1'
 fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
 fastdmtu='1312'
 fastdpeergroups="
-  backbone = {
-    limit = 2,
-    peers = {
-      bragi = {
-        key = 'd57c4409658033f6000b382f4c5a947c73ef43da957330de19c89ac355c4117b',
-        remotes = {'[2a03:4000:2:453::2] port 15224', '46.38.232.72 port 15224'},
-      },
-      rig = {
-        key = '4c42a5dbc9aa891c636ca9e09739188924643d35603bb9cbde18e6394e9a7d0c',
-        remotes = {'62.141.34.115 port 15224'},
-      },
-    },
-  },"
+			backbone = {
+				limit = 2,
+				peers = {
+					bragi = {
+						key = 'd57c4409658033f6000b382f4c5a947c73ef43da957330de19c89ac355c4117b',
+						remotes = {'[2a03:4000:2:453::2] port 15224', '46.38.232.72 port 15224'},
+					},
+					bragiHMTU = {
+						key = 'd9b50705741f004ea1a2c4c79a128e4208c5869bb8e1fbb93e86f4b3f46496fc',
+						remotes = {'[2a03:4000:2:453::2] port 30224', '46.38.232.72 port 30224'},
+					},
+					rig = {
+						key = '4c42a5dbc9aa891c636ca9e09739188924643d35603bb9cbde18e6394e9a7d0c',
+						remotes = {'[2001:4ba0:92f3:300::2] port 15224', '62.141.34.115 port 15224'},
+					},
+					rigHMTU = {
+						key = 'fe9d819df092848d42111a63cfa28a48112ddd0990f48917770464cd1e772529',
+						remotes = {'[2001:4ba0:92f3:300::2] port 30224', '62.141.34.115 port 30224'},
+					},
+					thor = {
+						key = 'd3af67403650fdf34948f27fedb2fed4b06f31efae4621f63eec66b067ece28d',
+						remotes = {'[2a01:4f8:202:63d3::2] port 15224', '148.251.117.6 port 15224'},
+					},
+					thorHTMU = {
+						key = 'a20d60618bceb201c44a7d20a97b49d51010a8d95a9861d684642a3649507e14',
+						remotes = {'[2a01:4f8:202:63d3::2] port 30224', '148.251.117.6 port 30224'},
+					},
+					zoidberg = {
+						key = 'b36417480518b457324a0191aaea2ade46eb0bd381d453f052a49ad6c4027dd2',
+						remotes = {'[2a06:9500:7:101::1] port 15224', '185.118.196.50 port 15224'},
+					},
+					zoidbergHMTU = {
+						key = '2730bdb06e3dc09e3270b409bcdc5407259e8ab02e6670c76a3fcf266a34e7dc',
+						remotes = {'[2a06:9500:7:101::1] port 30224', '185.118.196.50 port 30224'},
+					},
+					bender = {
+						key = '928d3d98b1019aed725fc1dd10cc35d2d44e560b547a9ea6e265f85b0d24e242',
+						remotes = {'[2a06:9500:7:102::1] port 15224', '185.118.197.50 port 15224'},
+					},
+					benderHMTU = {
+						key = '90ef1af05e079f1dd8a26328f653129aeb4af0c31cb1a675e5a72f845ee21278',
+						remotes = {'[2a06:9500:7:102::1] port 30224', '185.118.197.50 port 30224'},
+					},
+					horus = {
+						key = '7760959f0af0b0e08797b91020887fef529a8886f77c2f488710065bc073c208',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15224', '5.135.22.66 port 15224'},
+					},
+					horusHMTU = {
+						key = '6f17786894e65a1fd2513a3cfceb62f4ca296ad688fb5c01addd0ac609320797',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30224', '5.135.22.66 port 30224'},
+					},
+					frigg = {
+						key = 'dc52c3079c53023e646ff0c107beb8bc38892a4925c310ed9267af4bacb785de',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15224', '178.32.13.122 port 15224'},
+					},
+					friggHMTU = {
+						key = '7f1aaed5fdd031935c6e5c0654adf83a468177c6bf9b6d02a7975b8663c02b28',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30224', '178.32.13.122 port 30224'},
+					},
+				},
+			},"
 
-domain='wipp.freifunk.net'
-updatesrv1ip6='fddf:ebfd:a801:2267::fff1'
-updatesrv2ip6='fddf:ebfd:a801:2267::fff2'
+
 updateprobability='0.08'
 pubkeys="
   '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
@@ -35,7 +83,5 @@ pubkeys="
   'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
 
-updateprobabilitybeta='0.08'
-city='Wipperfürth'
-city2='Wipperfürther'
+updateprobabilityrc='0.08'
 additional_conf=''

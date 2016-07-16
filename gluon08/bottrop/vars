@@ -1,5 +1,7 @@
 sitename='Freifunk Bottrop'
 sitecode='bottrop'
+city='Bottrop'
+city2='Bottroper'
 prefix4='10.79.0.1/16'
 prefix6='fddf:ebfd:a801:2041::/64'
 ntpserver='fddf:ebfd:a801:2041::ac1'
@@ -11,23 +13,69 @@ ip6nn='fddf:ebfd:a801:2041:ffff::1'
 fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
 fastdmtu='1312'
 fastdpeergroups="
-  backbone = {
-    limit = 2,
-    peers = {
-      bragi = {
-        key = '5fd538144fbe90c9581ed2cc7697c7c455612974f5106174fcd54f5f4b01bf23',
-        remotes = {'[2a03:4000:2:453::2] port 15079', '46.38.232.72 port 15079'},
-      },
-      rig = {
-        key = '455cce5f50f97178094b251358d9c235a16787d3ba283905095841ba7dbe9b64',
-        remotes = {'[2001:4ba0:92f3:300::2] port 15079', '62.141.34.115 port 15079'},
-      },
-    },
-  },"
+        backbone = {
+				limit = 2,
+				peers = {
+					bragi = {
+						key = '5fd538144fbe90c9581ed2cc7697c7c455612974f5106174fcd54f5f4b01bf23',
+						remotes = {'[2a03:4000:2:453::2] port 15079', '46.38.232.72 port 15079'},
+					},
+					bragiHMTU = {
+						key = '0676c43e17a5b2f3b34eee0cd9fee869157ec630a3cb52cc9c4cdd7662b73382',
+						remotes = {'[2a03:4000:2:453::2] port 30079', '46.38.232.72 port 30079'},
+					},
+					rig = {
+						key = '455cce5f50f97178094b251358d9c235a16787d3ba283905095841ba7dbe9b64',
+						remotes = {'[2001:4ba0:92f3:300::2] port 15079', '62.141.34.115 port 15079'},
+					},
+					rigHMTU = {
+						key = '8519366f0544c8aa4e143cfe87b872ebb437351dcb5abfb64f40df17e50ed0dc',
+						remotes = {'[2001:4ba0:92f3:300::2] port 30079', '62.141.34.115 port 30079'},
+					},
+					thor = {
+						key = 'dbff4a560ca2e82adda2f77fe40c6124fa954d1d0fb39f488cf81db294b9f8ba',
+						remotes = {'[2a01:4f8:202:63d3::2] port 15079', '148.251.117.6 port 15079'},
+					},
+					thorHTMU = {
+						key = '99e9422e58d73ad6d5b8708a4e9442c97fd4796bc5bee084d4c4bf7806321015',
+						remotes = {'[2a01:4f8:202:63d3::2] port 30079', '148.251.117.6 port 30079'},
+					},
+					zoidberg = {
+						key = '89c3dae33e949e362799e97ad3368f72f08ddce275354d793d5ef81fb6f63223',
+						remotes = {'[2a06:9500:7:101::1] port 15079', '185.118.196.50 port 15079'},
+					},
+					zoidbergHMTU = {
+						key = '3bcde719648eea88c160eda40e25880b90fde02a6cd7d49de535841880d8dcdb',
+						remotes = {'[2a06:9500:7:101::1] port 30079', '185.118.196.50 port 30079'},
+					},
+					bender = {
+						key = '31a6e39a0e48a6e3bf3a5129826ee27d08d5b3085b1c6eec92702dfe8ed0b1af',
+						remotes = {'[2a06:9500:7:102::1] port 15079', '185.118.197.50 port 15079'},
+					},
+					benderHMTU = {
+						key = '41811ee8542f5b31178f7da59ab427027dc0546b4fff02679e7712be822ce8b9',
+						remotes = {'[2a06:9500:7:102::1] port 30079', '185.118.197.50 port 30079'},
+					},
+					horus = {
+						key = '4ae56ec6e1e29a7e9d627ffb90c4bb54b2e74d0857dd4f528afc1487a3ed6079',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15079', '5.135.22.66 port 15079'},
+					},
+					horusHMTU = {
+						key = '098316ea806870e03177a153e91020376a7cb7e68639a619d9d496367aeba97f',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30079', '5.135.22.66 port 30079'},
+					},
+					frigg = {
+						key = 'c8868ba7360767b58c047940d07523cc1650af991726a436af87b43e894a3e6b',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15079', '178.32.13.122 port 15079'},
+					},
+					friggHMTU = {
+						key = 'd27a976f69181d74edb98fa91440c877277fd4876ea1ab4f8f3f05c34c263b91',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30079', '178.32.13.122 port 30079'},
+					},
+				},
+            },"
 
-domain='bottrop.freifunk.net'
-updatesrv1ip6='fddf:ebfd:a801:2041::fff1'
-updatesrv2ip6='fddf:ebfd:a801:2041::fff2'
+
 updateprobability='0.08'
 pubkeys="
   '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
@@ -35,7 +83,5 @@ pubkeys="
   'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
 
-updateprobabilitybeta='0.08'
-city='Bottrop'
-city2='Bottroper'
+updateprobabilityrc='0.08'
 additional_conf=''

@@ -1,0 +1,90 @@
+sitename='Freifunk Marienheide'
+sitecode='marienheide'
+city='Marienheide'
+city2='Marienheider'
+prefix4='10.252.128.0/17'
+prefix6='fddf:ebfd:a801:2264::/64'
+ntpserver='fddf:ebfd:a801:2264::ac1'
+ssid='mhd.freifunk.net'
+meshmac='02:ca:fe:15:22:64'
+meshid='ff15mhd'
+ip4nn='10.252.128.1'
+ip6nn='fddf:ebfd:a801:2264:ffff::1'
+fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
+fastdmtu='1312'
+fastdpeergroups="
+			backbone = {
+				limit = 2,
+				peers = {
+					bragi = {
+						key = '060deaf68e9b89d5dc27f9a0a3d1457fb69efe0b638c6f4a002d5ef1c8e07a48',
+						remotes = {'[2a03:4000:2:453::2] port 15252', '46.38.232.72 port 15252'},
+					},
+					bragiHMTU = {
+						key = '4e5d0cdcb2a699b9cf6f7e5dc410d780f9616bd004de44909c6e825bcbb54704',
+						remotes = {'[2a03:4000:2:453::2] port 30252', '46.38.232.72 port 30252'},
+					},
+					rig = {
+						key = '5378cee998d6e8b521a87566c613dd4d7f20b86b005e29106478a87effe114ae',
+						remotes = {'[2001:4ba0:92f3:300::2] port 15252', '62.141.34.115 port 15252'},
+					},
+					rigHMTU = {
+						key = '4e5d0cdcb2a699b9cf6f7e5dc410d780f9616bd004de44909c6e825bcbb54704',
+						remotes = {'[2001:4ba0:92f3:300::2] port 30252', '62.141.34.115 port 30252'},
+					},
+					thor = {
+						key = 'ecbef93d2733c00e3f1a90d9b65f25989e2540d7e72c3a8cee638be81b1c3e82',
+						remotes = {'[2a01:4f8:202:63d3::2] port 15252', '148.251.117.6 port 15252'},
+					},
+					thorHTMU = {
+						key = '6cd01060ee5657e1412b16fc5bdf1ab739743f2a53d92e37ec3b25adca2abc15',
+						remotes = {'[2a01:4f8:202:63d3::2] port 30252', '148.251.117.6 port 30252'},
+					},
+					zoidberg = {
+						key = '5c9d5fe1c9468e029c81c4e1986d351b0fa3fd3359f22133097c5a8f5196c022',
+						remotes = {'[2a06:9500:7:101::1] port 15252', '185.118.196.50 port 15252'},
+					},
+					zoidbergHMTU = {
+						key = '152b069fba8f9bd55049e63e0ed9b5d6c0021fbdcef7d712d594cb0191610d9f',
+						remotes = {'[2a06:9500:7:101::1] port 30252', '185.118.196.50 port 30252'},
+					},
+					bender = {
+						key = 'd39c2ee2dbc2cbe7dee46e1d0f389309c24736576f0024b25fe78734444e0c82',
+						remotes = {'[2a06:9500:7:102::1] port 15252', '185.118.197.50 port 15252'},
+					},
+					benderHMTU = {
+						key = '321ad04175659a8e04c8f3ac59dea33bcf38fb6d011e14586594ca36c853c0e3',
+						remotes = {'[2a06:9500:7:102::1] port 30252', '185.118.197.50 port 30252'},
+					},
+					horus = {
+						key = 'bd51677c14601a00469acdde7eb485e73aea47a4249418de8b2c239b0575e52b',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15252', '5.135.22.66 port 15252'},
+					},
+					horusHMTU = {
+						key = 'e058a157e7f68a33a4d6f498b960925559624175fb8ca2726bf91a8be2e453ac',
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30252', '5.135.22.66 port 30252'},
+					},
+					frigg = {
+						key = '480fe61980b3f591820c93e93593a68433d1332ee7c04ca0360d89f8df54e744',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15252', '178.32.13.122 port 15252'},
+					},
+					friggHMTU = {
+						key = '2254985983d6a155910aafe73918e99d8f7b11ac95f10883822e0fad200637d2',
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30252', '178.32.13.122 port 30252'},
+					},
+				},
+			},
+			backbone_1 = {
+			},
+		},
+	},"
+
+updateprobability='0.08'
+pubkeys="
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
+  '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
+  
+updateprobabilityrc='0.08'
+additional_conf=''
