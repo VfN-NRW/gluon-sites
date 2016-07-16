@@ -34,11 +34,11 @@ fastdpeergroups="
 					},
 					thor = {
 						key = 'fb47118a560c24891e85947e966d5eb3db28642d272067df99d05756ef998a23',
-						remotes = {'[2a01:4f8:202:63d3::2] port 15250', '148.251.117.6 port 15250'},
+						remotes = {'[2a01:4f8:202:63d3::2] port 15250', '176.9.11.86 port 15250'},
 					},
 					thorHTMU = {
 						key = '0ec5aa599ff7a1d89650bb5ba901409d043141c5f59fab756e42de518518ca70',
-						remotes = {'[2a01:4f8:202:63d3::2] port 30250', '148.251.117.6 port 30250'},
+						remotes = {'[2a01:4f8:202:63d3::2] port 30250', '176.9.11.86 port 30250'},
 					},
 					zoidberg = {
 						key = '5ce57613485a453dcecbe4e6e353494799a6a2aefeaf20096389a725aca8d9db',
