@@ -12,78 +12,78 @@ ip4nn='10.6.0.1'
 ip6nn='fddf:ebfd:a801:212:ffff::1'
 fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
 fastdmtu='1312'
-fastdpeergroups="
-			backbone = {
-				limit = 2,
-				peers = {
-					bragi = {
-						key = 'ad739671d0258f38deba50e513c652b57ef09bfcce26c549aae91b3caa4f9d92',
-						remotes = {'[2a03:4000:2:453::2] port 15006', '46.38.232.72 port 15006'},
-					},
-					bragiHMTU = {
-						key = '432a67c3531b84644deb08fe59eff8ce13163cb824d365ac8a66ff777233d923',
-						remotes = {'[2a03:4000:2:453::2] port 30006', '46.38.232.72 port 30006'},
-					},
-					rig = {
-						key = '9881a79b6100a2c388e150973dc8e49c005e233366ebe206ef0e034d9b4d0ee1',
-						remotes = {'[2001:4ba0:92f3:300::2] port 15006', '62.141.34.115 port 15006'},
-					},
-					rigHMTU = {
-						key = '0f7eda5a753823e98bb990d60a2bd8030c57f8d08679345bc2aeeef5a83fc61b',
-						remotes = {'[2001:4ba0:92f3:300::2] port 30006', '62.141.34.115 port 30006'},
-					},
-					thor = {
-						key = '56f303948bb42fa9c2f687ed3cf4bef9d5049c04801a8ec41162c352020d37ce',
-						remotes = {'[2a01:4f8:202:63d3::2] port 15006', '176.9.11.86 port 15006'},
-					},
-					thorHTMU = {
-						key = '5db473dd8468aada1885af66d371a9d0d94860ca98f55413b45d627c42e9e3ce',
-						remotes = {'[2a01:4f8:202:63d3::2] port 30006', '176.9.11.86 port 30006'},
-					},
-					zoidberg = {
-						key = '09de6598ecbf4f09647cb1e8ec04c004254b755c754fca7fdd518d3248aae666',
-						remotes = {'[2a06:9500:7:101::1] port 15006', '185.118.196.50 port 15006'},
-					},
-					zoidbergHMTU = {
-						key = '3f687fe72fcc9b072ac828840fc713eaaf7d6046aad45e9a8ae52183394fb2ad',
-						remotes = {'[2a06:9500:7:101::1] port 30006', '185.118.196.50 port 30006'},
-					},
-					bender = {
-						key = '8c90793fc82e12282c220b262192a766fad40df9e61abdb0fbf439507ba2a032',
-						remotes = {'[2a06:9500:7:102::1] port 15006', '185.118.197.50 port 15006'},
-					},
-					benderHMTU = {
-						key = '4d5d4c8743250ed2f0f24b5dadb69a0418d6ac861ecaa17b745bf3b869c2303b',
-						remotes = {'[2a06:9500:7:102::1] port 30006', '185.118.197.50 port 30006'},
-					},
-					horus = {
-						key = '49d23541563e2b59ac6c78dbdc569946ad6c2bddccee68fd5108b45280c8b399',
-						remotes = {'[2001:41d0:2:b0db:1::1] port 15006', '5.135.22.66 port 15006'},
-					},
-					horusHMTU = {
-						key = '6143452b650f6f822ae9eb4790ed8ae8aaf174f0318e038bc29404b95ece98f2',
-						remotes = {'[2001:41d0:2:b0db:1::1] port 30006', '5.135.22.66 port 30006'},
-					},
-					frigg = {
-						key = '448f96d15c648332eb39e78046c019d3660396aaf7dfa7c6a459b21baaadcfea',
-						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15006', '178.32.13.122 port 15006'},
-					},
-					friggHMTU = {
-						key = '04ee0eb7b212e035df6bee1c262ef6c304ae1e3aea1b1f88d6c7f4ba19bd42a1',
-						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30006', '178.32.13.122 port 30006'},
-					},
-				},
+fastdpeergroups="\n\
+			backbone = {\n\
+				limit = 2,\n\
+				peers = {\n\
+					bragi = {\n\
+						key = 'ad739671d0258f38deba50e513c652b57ef09bfcce26c549aae91b3caa4f9d92',\n\
+						remotes = {'[2a03:4000:2:453::2] port 15006', '46.38.232.72 port 15006'},\n\
+					},\n\
+					bragiHMTU = {\n\
+						key = '432a67c3531b84644deb08fe59eff8ce13163cb824d365ac8a66ff777233d923',\n\
+						remotes = {'[2a03:4000:2:453::2] port 30006', '46.38.232.72 port 30006'},\n\
+					},\n\
+					rig = {\n\
+						key = '9881a79b6100a2c388e150973dc8e49c005e233366ebe206ef0e034d9b4d0ee1',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 15006', '62.141.34.115 port 15006'},\n\
+					},\n\
+					rigHMTU = {\n\
+						key = '0f7eda5a753823e98bb990d60a2bd8030c57f8d08679345bc2aeeef5a83fc61b',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 30006', '62.141.34.115 port 30006'},\n\
+					},\n\
+					thor = {\n\
+						key = '56f303948bb42fa9c2f687ed3cf4bef9d5049c04801a8ec41162c352020d37ce',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 15006', '176.9.11.86 port 15006'},\n\
+					},\n\
+					thorHTMU = {\n\
+						key = '5db473dd8468aada1885af66d371a9d0d94860ca98f55413b45d627c42e9e3ce',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 30006', '176.9.11.86 port 30006'},\n\
+					},\n\
+					zoidberg = {\n\
+						key = '09de6598ecbf4f09647cb1e8ec04c004254b755c754fca7fdd518d3248aae666',\n\
+						remotes = {'[2a06:9500:7:101::1] port 15006', '185.118.196.50 port 15006'},\n\
+					},\n\
+					zoidbergHMTU = {\n\
+						key = '3f687fe72fcc9b072ac828840fc713eaaf7d6046aad45e9a8ae52183394fb2ad',\n\
+						remotes = {'[2a06:9500:7:101::1] port 30006', '185.118.196.50 port 30006'},\n\
+					},\n\
+					bender = {\n\
+						key = '8c90793fc82e12282c220b262192a766fad40df9e61abdb0fbf439507ba2a032',\n\
+						remotes = {'[2a06:9500:7:102::1] port 15006', '185.118.197.50 port 15006'},\n\
+					},\n\
+					benderHMTU = {\n\
+						key = '4d5d4c8743250ed2f0f24b5dadb69a0418d6ac861ecaa17b745bf3b869c2303b',\n\
+						remotes = {'[2a06:9500:7:102::1] port 30006', '185.118.197.50 port 30006'},\n\
+					},\n\
+					horus = {\n\
+						key = '49d23541563e2b59ac6c78dbdc569946ad6c2bddccee68fd5108b45280c8b399',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15006', '5.135.22.66 port 15006'},\n\
+					},\n\
+					horusHMTU = {\n\
+						key = '6143452b650f6f822ae9eb4790ed8ae8aaf174f0318e038bc29404b95ece98f2',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30006', '5.135.22.66 port 30006'},\n\
+					},\n\
+					frigg = {\n\
+						key = '448f96d15c648332eb39e78046c019d3660396aaf7dfa7c6a459b21baaadcfea',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15006', '178.32.13.122 port 15006'},\n\
+					},\n\
+					friggHMTU = {\n\
+						key = '04ee0eb7b212e035df6bee1c262ef6c304ae1e3aea1b1f88d6c7f4ba19bd42a1',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30006', '178.32.13.122 port 30006'},\n\
+					},\n\
+				},\n\
 			},"
 
 updateprobability='0.08'
-pubkeys="
-  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)
-  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)
-  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)
+pubkeys="\n\
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)\n\
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)\n\
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
 
 updateprobabilityrc='0.08'
-additional_conf="
-  setup_mode = {
-		skip = true,
+additional_conf="\n\
+  setup_mode = {\n\
+		skip = true,\n\
 	}"
