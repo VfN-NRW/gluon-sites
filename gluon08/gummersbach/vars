@@ -2,6 +2,7 @@ sitename='Freifunk Gummersbach'
 sitecode='gummersbach
 city='Gummersbach'
 city2='Gummersbacher'
+domain='www.freifunk-gummersbach.de'
 prefix4='10.253.128.0/17'
 prefix6='fddf:ebfd:a801:2261::/64'
 ntpserver='fddf:ebfd:a801:2261::ac1'
