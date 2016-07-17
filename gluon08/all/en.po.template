@@ -15,10 +15,6 @@ msgstr ""
 "Welcome to the configuration mode of your new +++city2+++"
 " Freifunk node. Please fill out the following form to complete the setup."
 
-msgid "gluon-config-mode:pubkey"
-msgstr ""
-""
-
 msgid "gluon-config-mode:reboot"
 msgstr ""
 "It's rebooting now and will try to establish connections to other "
