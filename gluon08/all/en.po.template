@@ -12,7 +12,7 @@ msgstr ""
 
 msgid "gluon-config-mode:welcome"
 msgstr ""
-"Welcome to the configuration mode of your new +++city2+++"
+"You are in the configuration mode of your new +++city2+++"
 " Freifunk node. Please fill out the following form to complete the setup."
 
 msgid "gluon-config-mode:reboot"
