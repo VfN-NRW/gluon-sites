@@ -1,6 +1,4 @@
 {
-	+++additional_conf+++
-
 	site_name = '+++sitename+++',
 	site_code = '+++sitecode+++',
 
