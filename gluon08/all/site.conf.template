@@ -82,7 +82,7 @@
 					'http://5.135.22.67/gluon/+++sitecode+++/stable/latest/',
 				},
 				probability = +++updateprobability+++,
-				good_signatures = 2,
+				good_signatures = 1,
 				pubkeys = {
 				  +++pubkeys+++
 				},
@@ -100,7 +100,7 @@
 					'http://5.135.22.67/gluon/+++sitecode+++/rc/latest/',
 				},
 				probability = +++updateprobabilityrc+++,
-				good_signatures = 2,
+				good_signatures = 1,
 				pubkeys = {
 					+++pubkeys+++
 				},
