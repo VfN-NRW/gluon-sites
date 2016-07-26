@@ -65,6 +65,14 @@ fastdpeergroups="\n\
 						key = 'e058a157e7f68a33a4d6f498b960925559624175fb8ca2726bf91a8be2e453ac',\n\
 						remotes = {'[2001:41d0:2:b0db:1::1] port 30252', '5.135.22.66 port 30252'},\n\
 					},\n\
+					vulcanus = {\n\
+						key = 'b8a3eeca0da08a82b81d87fb806f56bb2a0d2ff05f6b5af86df7dd6b234a26ce',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15224'},\n\
+					},\n\
+					vulcanusHMTU = {\n\
+						key = '127c84fdea55e2778a42afd99d9cb1242a76cf0cd4e88bbbbfc5eb7530355df0',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30224'},\n\
+					},\n\
 					frigg = {\n\
 						key = '480fe61980b3f591820c93e93593a68433d1332ee7c04ca0360d89f8df54e744',\n\
 						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15252', '178.32.13.122 port 15252'},\n\
@@ -86,6 +94,6 @@ pubkeys="\n\
   '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)\n\
   'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
-  
+
 updateprobabilityrc='0.08'
 additional_conf=''

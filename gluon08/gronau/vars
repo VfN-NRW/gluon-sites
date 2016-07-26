@@ -65,6 +65,14 @@ fastdpeergroups="\n\
 						key = '8208136f9a3da69b93a3e4264aba9bc807e19444a4562dc1b99e1a17e2d0cda7',\n\
 						remotes = {'[2001:41d0:2:b0db:1::1] port 30206', '5.135.22.66 port 30206'},\n\
 					},\n\
+					vulcanus = {\n\
+						key = 'eaf7f162cf97bf9f4e92a799bbd0086ddef2dd19e8e65d2f8db1e46871233c88',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15224'},\n\
+					},\n\
+					vulcanusHMTU = {\n\
+						key = '66aa0e805d1a418a33bd171a8e1732d333cbb8d1a378997c1bc72c64fc8a10d3',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30224'},\n\
+					},\n\
 					frigg = {\n\
 						key = 'e5eae1c972ef79805de5c62ed2d2b81736fd07c0380080316fc3064694eea334',\n\
 						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15206', '178.32.13.122 port 15206'},\n\
@@ -91,6 +99,6 @@ pubkeys="
   'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)\n\
   '4d4755f300a0023e5da1e3dda6168c89614cbd28fffff79a073327adc3897883', -- Sascha Bias (Freifunk Gronau)"
-  
+
 updateprobabilityrc='0.08'
 additional_conf=''
