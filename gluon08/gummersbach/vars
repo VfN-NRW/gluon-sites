@@ -84,9 +84,7 @@ fastdpeergroups="\n\
 				},\n\
 			},\n\
 			backbone_1 = {\n\
-			},\n\
-		},\n\
-	},"
+			},"
 
 updateprobability='0.08'
 pubkeys="\n\
