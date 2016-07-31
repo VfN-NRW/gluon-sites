@@ -13,9 +13,7 @@
 		'+++ntpserver+++'
 	},
 
-	dns_servers = {
-		'+++dnsserver+++'
-	},
+	dns_servers = '+++dnsserver+++',
 
 	--[[	Wireless settings ]]
 	regdom = 'DE',
