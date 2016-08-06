@@ -32,7 +32,7 @@
 	},
 
 	wifi5 = {
-		channel = 108,
+		channel = 100,
 		htmode = 'HT40+',
 		ap = {
 			ssid = '+++ssid+++',
