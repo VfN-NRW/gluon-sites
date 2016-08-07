@@ -20,7 +20,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-radvd \
 	iwinfo \
 	iptables \
-	haveged
+	haveged \
+	gluon-radv-filterd
 
 
 
