@@ -21,7 +21,8 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged \
-	gluon-radv-filterd
+	gluon-radv-filterd \
+	gluon-ebtables-segment-mld
 
 
 
