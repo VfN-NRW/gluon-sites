@@ -101,5 +101,5 @@ pubkeys="
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)\n\
   '4d4755f300a0023e5da1e3dda6168c89614cbd28fffff79a073327adc3897883', -- Sascha Bias (Freifunk Gronau)"
 
-updateprobabilityrc='0.08'
+updateprobabilityrc='0.33'
 additional_conf=''
