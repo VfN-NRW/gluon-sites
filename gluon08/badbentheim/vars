@@ -68,11 +68,11 @@ fastdpeergroups="\n\
 					},\n\
 					vulcanus = {\n\
 						key = '5ed65047756ef8612e81d3edd1a0c6bbb8e645e012a7df35474e16a61c18e25a',\n\
-						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15224'},\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15001'},\n\
 					},\n\
 					vulcanusHMTU = {\n\
 						key = 'fe4b68fdfaf1ad37581b0cce10446262f9cc0cd83c5f6f70d20b5c2d332ca566',\n\
-						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30224'},\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30001'},\n\
 					},\n\
 					frigg = {\n\
 						key = '798e65346809e4542a276447c6906c3d42dcef62c117240629bb3021f6a01f52',\n\
