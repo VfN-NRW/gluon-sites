@@ -1,0 +1,96 @@
+sitename='Freifunk Bad Bentheim'
+sitecode='badbentheim'
+city='Bad Bentheim'
+city2='Bentheimer'
+domain='freifunk-bad-bentheim.de'
+prefix4='10.1.0.0/17'
+prefix6='fddf:ebfd:a801:5922::/64'
+ntpserver='fddf:ebfd:a801:5922::ac1'
+dnsserver='fddf:ebfd:a801:5922::ac1'
+ssid='bent.freifunk.net'
+meshmac='02:ca:fe:15:59:22'
+meshid='ff15bent'
+ip4nn='10.1.0.1'
+ip6nn='fddf:ebfd:a801:5922:ffff::1'
+fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
+fastdmtu='1312'
+fastdpeergroups="\n\
+  backbone = {\n\
+				limit = 2,\n\
+				peers = {\n\
+					bragi = {\n\
+						key = '66009f73281b3e5e37ff2af212bd2a4526a0464af9dc9c29d2fc3164014ca4ba',\n\
+						remotes = {'[2a03:4000:2:453::2] port 15001', '46.38.232.72 port 15001'},\n\
+					},\n\
+					bragiHMTU = {\n\
+						key = '90d6ea25ed2bb9443498a7625354fcab25b01afda92e6da187a9db363ff3a622',\n\
+						remotes = {'[2a03:4000:2:453::2] port 30001', '46.38.232.72 port 30001'},\n\
+					},\n\
+					rig = {\n\
+						key = '0882b877e022e6c8926d0079d24c9cc33f72536dffc95efd51e4af672032882c',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 15001', '62.141.34.115 port 15001'},\n\
+					},\n\
+					rigHMTU = {\n\
+						key = '134657c7a71605967f3dd9e10bb870f92498a5da5085719fbc74064b7ef91da5',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 30001', '62.141.34.115 port 30001'},\n\
+					},\n\
+					thor = {\n\
+						key = '5372d37dc18c929090b1d21ee0f57ecefd32054f0c8bf5249df8b037d9b79ad3',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 15001', '176.9.11.86 port 15001'},\n\
+					},\n\
+					thorHTMU = {\n\
+						key = '7305c288346d0aa121618c928f16f764bf53fd6e7be88cfbcf0021f82e8d796d',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 30001', '176.9.11.86 port 30001'},\n\
+					},\n\
+					zoidberg = {\n\
+						key = 'fdd4997d66492b525bd20f5aa507960bd3b9e3574d8e01a0ecfeb8180ff3fea2',\n\
+						remotes = {'[2a06:9500:7:101::1] port 15001', '185.118.196.50 port 15001'},\n\
+					},\n\
+					zoidbergHMTU = {\n\
+						key = '18d8cc6278096a501483d92035de2d5a62ae16b66cad64a2977751d0266ddc09',\n\
+						remotes = {'[2a06:9500:7:101::1] port 30001', '185.118.196.50 port 30001'},\n\
+					},\n\
+					bender = {\n\
+						key = 'de5da25ba7b2e2c79a41316583368d3c22bad56be9985d4575294c097bf0773d',\n\
+						remotes = {'[2a06:9500:7:102::1] port 15001', '185.118.197.50 port 15001'},\n\
+					},\n\
+					benderHMTU = {\n\
+						key = 'c1c86a2ec40fef252cfd5e2a3761253138f0580363eccb5aa66328bfb026bc25',\n\
+						remotes = {'[2a06:9500:7:102::1] port 30001', '185.118.197.50 port 30001'},\n\
+					},\n\
+					horus = {\n\
+						key = '864eb2aaec22f563b7c90b54c27d47e2de96aa5f9d62e91dda45f785752ed6a4',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15001', '5.135.22.66 port 15001'},\n\
+					},\n\
+					horusHMTU = {\n\
+						key = '31e9b6bd8509ef096d11628c976dbb0059199c997ca92b53f5ac6b82a8f9c07a',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30001', '5.135.22.66 port 30001'},\n\
+					},\n\
+					vulcanus = {\n\
+						key = '5ed65047756ef8612e81d3edd1a0c6bbb8e645e012a7df35474e16a61c18e25a',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15001'},\n\
+					},\n\
+					vulcanusHMTU = {\n\
+						key = 'fe4b68fdfaf1ad37581b0cce10446262f9cc0cd83c5f6f70d20b5c2d332ca566',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30001'},\n\
+					},\n\
+					frigg = {\n\
+						key = '798e65346809e4542a276447c6906c3d42dcef62c117240629bb3021f6a01f52',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15001', '178.32.13.122 port 15001'},\n\
+					},\n\
+					friggHMTU = {\n\
+						key = 'c67438e5a2dd3c9353dcfd29d8c8358bbb51897d9e7e89a0e621dbfaaf3ca803',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30001', '178.32.13.122 port 30001'},\n\
+					},\n\
+				},\n\
+            },"
+
+updateprobability='0.08'
+pubkeys="\n\
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)\n\
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)\n\
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
+  '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
+
+updateprobabilityrc='0.33'
+additional_conf=''

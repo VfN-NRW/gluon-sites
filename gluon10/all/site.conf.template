@@ -1,0 +1,123 @@
+{
+	site_name = '+++sitename+++',
+	site_code = '+++sitecode+++',
+
+	--[[	General network settings ]]
+	prefix4 = '+++prefix4+++',
+	prefix6 = '+++prefix6+++',
+
+
+	--[[	NTP settings ]]
+	timezone = 'CET-1CEST,M3.5.0,M10.5.0/3',
+	ntp_servers = {
+		'+++ntpserver+++'
+	},
+
+	dns_servers = '+++dnsserver+++',
+
+	--[[	Wireless settings ]]
+	regdom = 'DE',
+
+	wifi24 = {
+		channel = 5,
+		htmode = 'HT40-',
+		ap = {
+			ssid = '+++ssid+++',
+		},
+		ibss = {
+			ssid = 'mesh-v15',
+			bssid = '+++meshmac+++',
+			mcast_rate = 6000,
+		},
+	},
+
+	wifi5 = {
+		channel = 100,
+		htmode = 'HT40+',
+		ap = {
+			ssid = '+++ssid+++',
+		},
+		ibss = {
+			ssid = 'mesh-v15',
+			bssid = '+++meshmac+++',
+			mcast_rate = 6000,
+		},
+	},
+
+	--[[	Next-Node ]]
+	next_node = {
+		ip4 = '+++ip4nn+++',
+		ip6 = '+++ip6nn+++',
+		mac = 'da:ab:dd:7d:ff:ff',
+	},
+
+  --[[  Network configurations ]]
+  mesh_on_wan = true,
+
+	--[[	Gateway settings ]]
+	fastd_mesh_vpn = {
+		enabled = true,
+		methods = {+++fastdmethods+++},
+		mtu = +++fastdmtu+++,
+		groups = {
+		  +++fastdpeergroups+++
+		},
+	},
+
+
+	--[[	Autoupdater settings ]]
+	autoupdater = {
+		branch = 'stable',
+		branches = {
+			stable = {
+				name = 'stable',
+				mirrors = {
+					'http://[fddf:ebfd:a801:fff::1]/gluon/+++sitecode+++/stable/latest/',
+					'http://[fddf:ebfd:a801:fff::2]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:67c:1714:fff:1]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:67c:1714:fff:2]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:4ba0:92f3:300::100]/gluon/+++sitecode+++/stable/latest/',
+					'http://[2001:41d0:2:b0db:1::67]/gluon/+++sitecode+++/stable/latest/',
+					'http://62.141.34.119/gluon/+++sitecode+++/stable/latest/',
+					'http://5.135.22.67/gluon/+++sitecode+++/stable/latest/',
+				},
+				probability = +++updateprobability+++,
+				good_signatures = 2,
+				pubkeys = {
+				  +++pubkeys+++
+				},
+			},
+			rc = {
+				name = 'rc',
+				mirrors = {
+					'http://[fddf:ebfd:a801:fff::1]/gluon/+++sitecode+++/rc/latest/',
+					'http://[fddf:ebfd:a801:fff::2]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:67c:1714:fff:1]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:67c:1714:fff:2]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:4ba0:92f3:300::100]/gluon/+++sitecode+++/rc/latest/',
+					'http://[2001:41d0:2:b0db:1::67]/gluon/+++sitecode+++/rc/latest/',
+					'http://62.141.34.119/gluon/+++sitecode+++/rc/latest/',
+					'http://5.135.22.67/gluon/+++sitecode+++/rc/latest/',
+				},
+				probability = +++updateprobabilityrc+++,
+				good_signatures = 2,
+				pubkeys = {
+					+++pubkeys+++
+				},
+			},
+		},
+	},
+
+
+	--[[	Simple TC settings to limit the bandwidth of the vpn-uplink ]]
+	simple_tc = {
+		mesh_vpn = {
+			ifname = 'mesh-vpn',
+			enabled = false,
+			limit_egress = 200,
+			limit_ingress = 3000,
+		},
+	},
+}
+
+-- vim: filetype=lua

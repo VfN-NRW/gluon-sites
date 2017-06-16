@@ -1,0 +1,96 @@
+sitename='Freifunk Hückeswagen'
+sitecode='hueckeswagen'
+city='Hückeswagen'
+city2='Hückeswagenener'
+domain='www.freifunk-hueckeswagen.de'
+prefix4='10.146.0.0/16'
+prefix6='fddf:ebfd:a801:2192::/64'
+ntpserver='fddf:ebfd:a801:2192::ac1'
+dnsserver='fddf:ebfd:a801:2192::ac1'
+ssid='hw.freifunk.net'
+meshmac='02:ca:fe:15:21:92'
+meshid='ff15hw'
+ip4nn='10.146.0.1'
+ip6nn='fddf:ebfd:a801:2192:ffff::1'
+fastdmethods="'salsa2012+umac', 'salsa2012+gmac'"
+fastdmtu='1312'
+fastdpeergroups="\n\
+        backbone = {\n\
+				limit = 2,\n\
+				peers = {\n\
+					bragi = {\n\
+						key = 'cdcfefb799dca56262fbeaa0cc64c3d5f88556d6779793f4339506864ba897c7',\n\
+						remotes = {'46.38.232.72 port 15146', '[2a03:4000:2:453::2] port 15146'},\n\
+					},\n\
+					bragiHMTU = {\n\
+						key = 'c039d5ed950fd8e76390288eb6df2eba93395db8939536aa98ab4c9766e132c7',\n\
+						remotes = {'[2a03:4000:2:453::2] port 30146', '46.38.232.72 port 30146'},\n\
+					},\n\
+					rig = {\n\
+						key = '9929003ccf47db6c2743aea782bc6d6164207a127b4619a8d64774c45fb44356',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 15146', '62.141.34.115 port 15146'},\n\
+					},\n\
+					rigHMTU = {\n\
+						key = 'a8ed1138ff39b4be7e4a3925240bfa97d22ffa86884d51583714fce22f70ff2a',\n\
+						remotes = {'[2001:4ba0:92f3:300::2] port 30146', '62.141.34.115 port 30146'},\n\
+					},\n\
+					thor = {\n\
+						key = 'edb86abe47c00f8b3bb75a7b2cfb055cf239f7071f49c2c96634f4bccb2b50ec',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 15146', '176.9.11.86 port 15146'},\n\
+					},\n\
+					thorHTMU = {\n\
+						key = '69e4a08e236b21bcb21482226cdb3069f48f83ea547fb51889f214b43828d4ce',\n\
+						remotes = {'[2a01:4f8:202:63d3::2] port 30146', '176.9.11.86 port 30146'},\n\
+					},\n\
+					zoidberg = {\n\
+						key = 'a3b972070eab5059b77d4d84db6b2814aa902eb0fc473ea05664dc7869e046a6',\n\
+						remotes = {'[2a06:9500:7:101::1] port 15146', '185.118.196.50 port 15146'},\n\
+					},\n\
+					zoidbergHMTU = {\n\
+						key = 'f7425283a24eb30d96926175c05ac2c5c218f28903a5306e703b12e2783d304a',\n\
+						remotes = {'[2a06:9500:7:101::1] port 30146', '185.118.196.50 port 30146'},\n\
+					},\n\
+					bender = {\n\
+						key = 'aecd230b1f023e6efdace2c274ad9fb342f0da3bf789148af806d58c335e705c',\n\
+						remotes = {'[2a06:9500:7:102::1] port 15146', '185.118.197.50 port 15146'},\n\
+					},\n\
+					benderHMTU = {\n\
+						key = 'd077c5c5730ed6727e58dffb7c268b435036217a496052dd5bb9e4a7d17da543',\n\
+						remotes = {'[2a06:9500:7:102::1] port 30146', '185.118.197.50 port 30146'},\n\
+					},\n\
+					horus = {\n\
+						key = 'ee7a11e0abf15e91adb6ae144c68321534ac6988e3b30691b70939c944f51aab',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 15146', '5.135.22.66 port 15146'},\n\
+					},\n\
+					horusHMTU = {\n\
+						key = 'bfda1342898ccfd22d3701e14ff56301c28ecae1c3ffbf8abf33182999df12db',\n\
+						remotes = {'[2001:41d0:2:b0db:1::1] port 30146', '5.135.22.66 port 30146'},\n\
+					},\n\
+					vulcanus = {\n\
+						key = 'c3d993c5f916e378a4b3278e3f5b6c48ce3bedd34104b5b02412b7fd4f630502',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15146'},\n\
+					},\n\
+					vulcanusHMTU = {\n\
+						key = '0dcc1732b3a1c535c284e15d5f4797325b183b451c40c16ff390acb77711be0b',\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30146'},\n\
+					},\n\
+					frigg = {\n\
+						key = '214800af4930db1eb479b71986f0347de23ecddddfda3d4d42499ef196b328b1',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15146', '178.32.13.122 port 15146'},\n\
+					},\n\
+					friggHMTU = {\n\
+						key = '8cd280b2856645be894f7b06ed71c4b55a72e7436929a176e980422877849e63',\n\
+						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30146', '178.32.13.122 port 30146'},\n\
+					},\n\
+				},\n\
+			},"
+
+updateprobability='0.08'
+pubkeys="\n\
+  '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)\n\
+  '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)\n\
+  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
+  '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
+
+updateprobabilityrc='0.33'
+additional_conf=''
