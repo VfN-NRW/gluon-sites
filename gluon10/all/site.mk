@@ -10,23 +10,28 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-wifi-config \
-	gluon-luci-autoupdater \
-	gluon-luci-private-wifi \
-	gluon-luci-portconfig \
-	gluon-next-node \
+	gluon-ebtables-source-filter \
+	gluon-web-admin \
+	gluon-web-wifi-config \
+	gluon-web-autoupdater \
+	gluon-autoupdater \
+	gluon-web-private-wifi \
+	gluon-web-network \
+	gluon-client-bridge \
 	gluon-mesh-vpn-fastd \
-	gluon-radvd \
 	iwinfo \
 	iptables \
 	haveged \
-	gluon-radv-filterd \
-	gluon-ebtables-segment-mld
-
-
+	gluon-ebtables-segment-mld \
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
+
+# Region code required for some images; supported values: us eu
+GLUON_REGION ?= eu
+
+# Languages to include
+GLUON_LANGS ?= en de
+
