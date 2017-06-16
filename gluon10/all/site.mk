@@ -22,7 +22,7 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	iptables \
 	haveged \
-	gluon-ebtables-segment-mld \
+	gluon-ebtables-segment-mld
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
