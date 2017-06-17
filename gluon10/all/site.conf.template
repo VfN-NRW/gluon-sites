@@ -1,23 +1,14 @@
 {
 	site_name = '+++sitename+++',
 	site_code = '+++sitecode+++',
-
-	--[[	General network settings ]]
 	prefix4 = '+++prefix4+++',
 	prefix6 = '+++prefix6+++',
-
-
-	--[[	NTP settings ]]
 	timezone = 'CET-1CEST,M3.5.0,M10.5.0/3',
 	ntp_servers = {
 		'+++ntpserver+++'
 	},
-
 	dns_servers = '+++dnsserver+++',
-
-	--[[	Wireless settings ]]
 	regdom = 'DE',
-
 	wifi24 = {
 		channel = 5,
 		htmode = 'HT40-',
@@ -30,7 +21,6 @@
 			bssid = '+++meshmac+++',
 		},
 	},
-
 	wifi5 = {
 		channel = 100,
 		htmode = 'HT40+',
@@ -42,18 +32,12 @@
 			bssid = '+++meshmac+++',
 		},
 	},
-
-	--[[	Next-Node ]]
 	next_node = {
 		ip4 = '+++ip4nn+++',
 		ip6 = '+++ip6nn+++',
 		mac = 'da:ab:dd:7d:ff:ff',
 	},
-
-  --[[  Network configurations ]]
-  mesh_on_wan = true,
-
-	--[[	Gateway settings ]]
+	mesh_on_wan = true,
 	fastd_mesh_vpn = {
 		enabled = true,
 		methods = {+++fastdmethods+++},
@@ -62,9 +46,6 @@
 		  +++fastdpeergroups+++
 		},
 	},
-
-
-	--[[	Autoupdater settings ]]
 	autoupdater = {
 		branch = 'stable',
 		branches = {
@@ -106,9 +87,6 @@
 			},
 		},
 	},
-
-
-	--[[	Simple TC settings to limit the bandwidth of the vpn-uplink ]]
 	simple_tc = {
 		mesh_vpn = {
 			ifname = 'mesh-vpn',
@@ -118,5 +96,3 @@
 		},
 	},
 }
-
--- vim: filetype=lua
