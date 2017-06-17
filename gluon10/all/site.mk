@@ -11,8 +11,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-ebtables-source-filter \
-	gluon-ebtables-segment-mld \
-	gluon-radv-filterd \
 	gluon-web-admin \
 	gluon-web-wifi-config \
 	gluon-web-autoupdater \
@@ -23,7 +21,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	iwinfo \
 	iptables \
-	haveged
+	haveged \
+	gluon-ebtables-segment-mld
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
