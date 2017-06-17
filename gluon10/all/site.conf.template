@@ -21,6 +21,7 @@
 	wifi24 = {
 		channel = 5,
 		htmode = 'HT40-',
+		basic_rate = {6000, 9000, 18000, 36000, 54000},
 		ap = {
 			ssid = '+++ssid+++',
 		},
