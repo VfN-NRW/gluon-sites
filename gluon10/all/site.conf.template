@@ -43,12 +43,15 @@
 			gw_sel_class = 1,
 		},
 	},
-	fastd_mesh_vpn = {
+	mesh_vpn = {
 		enabled = true,
-		methods = {+++fastdmethods+++},
 		mtu = +++fastdmtu+++,
-		groups = {
-		  +++fastdpeergroups+++
+		fastd = {
+			methods = {+++fastdmethods+++},
+			configurable = true,
+			groups = {
+		  		+++fastdpeergroups+++
+			},
 		},
 	},
 	autoupdater = {
