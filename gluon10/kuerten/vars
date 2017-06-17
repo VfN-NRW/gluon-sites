@@ -18,53 +18,25 @@ fastdpeergroups="\n\
         backbone = {\n\
 				limit = 2,\n\
 				peers = {\n\
-					bragi = {\n\
-						key = 'b501238b8bb3b5304c647db9bc18a797b016d962662ccdc5ce901e38b160a9f5',\n\
-						remotes = {'[2a03:4000:2:453::2] port 15016', '46.38.232.72 port 15016'},\n\
-					},\n\
-					bragiHMTU = {\n\
-						key = 'ee1a5bf88c59def8cfc25142323d95bef2f9ea5b786986b00219bde947c330c4',\n\
-						remotes = {'[2a03:4000:2:453::2] port 30016', '46.38.232.72 port 30016'},\n\
-					},\n\
 					rig = {\n\
 						key = '4f82ae7f23ebe6c7e70baa1a561c8d4eba3feed3cd1bf684390d4902ab58d899',\n\
 						remotes = {'[2001:4ba0:92f3:300::2] port 15016', '62.141.34.115 port 15016'},\n\
-					},\n\
-					rigHMTU = {\n\
-						key = '1fec93361bae6056dd25c5c9ae95c5f8afe891ff2ae7c6a1782d170b12e5bf30',\n\
-						remotes = {'[2001:4ba0:92f3:300::2] port 30016', '62.141.34.115 port 30016'},\n\
 					},\n\
 					thor = {\n\
 						key = 'dc9eae028b063f463be330edcbe1e80f8d25875caa95f95bb35d322d591c1e81',\n\
 						remotes = {'[2a01:4f8:202:63d3::2] port 15016', '176.9.11.86 port 15016'},\n\
 					},\n\
-					thorHTMU = {\n\
-						key = '026a3ca9ffc03d2141a38d95fde22a15dae0e11dbe75aae98985f92bdaaf8378',\n\
-						remotes = {'[2a01:4f8:202:63d3::2] port 30016', '176.9.11.86 port 30016'},\n\
-					},\n\
 					horus = {\n\
 						key = '7e55002c8affc214487710963d0419646227554fbf5f83271ee3e8764b59c971',\n\
 						remotes = {'[2001:41d0:2:b0db:1::1] port 15016', '5.135.22.66 port 15016'},\n\
-					},\n\
-					horusHMTU = {\n\
-						key = '2ee431520987447e59e98bbf4674a3deb5cc56fd41e0d9d209564316b66734cf',\n\
-						remotes = {'[2001:41d0:2:b0db:1::1] port 30016', '5.135.22.66 port 30016'},\n\
 					},\n\
 					vulcanus = {\n\
 						key = '9e973e1dc3eb94f44e17d142d3f7711c70fe7ff61c9e2393c24e12917ddd2cc0',\n\
 						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15016'},\n\
 					},\n\
-					vulcanusHMTU = {\n\
-						key = 'b7e16fa409fed4c522b6aa3f930fd8b7ed2d32d32cd1c837d49ec989e547ac28',\n\
-						remotes = {'[2001:4ba0:dead:b020::10] port 30224', '185.97.5.66 port 30016'},\n\
-					},\n\
 					frigg = {\n\
 						key = 'de59eeee179065156fb364fb93af684f15181fbb723069cd6001f7b95881787d',\n\
 						remotes = {'[2001:41d0:2:b5ce:ff::1] port 15016', '178.32.13.122 port 15016'},\n\
-					},\n\
-					friggHMTU = {\n\
-						key = 'c7e646968d5fc057aad5d1df8144744626c21118ccd8961c600ad3302c0e5851',\n\
-						remotes = {'[2001:41d0:2:b5ce:ff::1] port 30016', '178.32.13.122 port 30016'},\n\
 					},\n\
 				},\n\
 			},"
@@ -73,8 +45,7 @@ updateprobability='0.08'
 pubkeys="\n\
   '1edde86c682e36260258c49ae55f0a6e07c058d6ac806a6d30a903ff6d4848d8', -- Felix Kaechele (Freifunk Leverkusen)\n\
   '6cdb4e7eb5ddc4ba57d336dfc86b7fe7db647acc077407824030b6fc0f4f91bc', -- Ruben Kelevra (Freifunk Leverkusen)\n\
-  'b5270666ed74c74965ae9188d71282504c912ec19dccc6ead2f63ac2791e0c7f', -- Kevin Olbrich (Freifunk Hückeswagen)\n\
   '33d1fe8cb1edd20995fdeb0d70559911d55ee07bad344e91c54567edf716c54d', -- Robert Proemper (Freifunk Remscheid)"
 
-updateprobabilityrc='0.33'
+updateprobabilityrc='0.08'
 additional_conf=''
