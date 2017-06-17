@@ -38,6 +38,11 @@
 		mac = 'da:ab:dd:7d:ff:ff',
 	},
 	mesh_on_wan = true,
+	mesh = {
+		batman_adv = {
+			gw_sel_class = 1,
+		},
+	},
 	fastd_mesh_vpn = {
 		enabled = true,
 		methods = {+++fastdmethods+++},
