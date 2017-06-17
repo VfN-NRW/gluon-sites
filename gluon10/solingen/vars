@@ -42,22 +42,6 @@ fastdpeergroups="\n\
 						key = '5db473dd8468aada1885af66d371a9d0d94860ca98f55413b45d627c42e9e3ce',\n\
 						remotes = {'[2a01:4f8:202:63d3::2] port 30006', '176.9.11.86 port 30006'},\n\
 					},\n\
-					zoidberg = {\n\
-						key = '09de6598ecbf4f09647cb1e8ec04c004254b755c754fca7fdd518d3248aae666',\n\
-						remotes = {'[2a06:9500:7:101::1] port 15006', '185.118.196.50 port 15006'},\n\
-					},\n\
-					zoidbergHMTU = {\n\
-						key = '3f687fe72fcc9b072ac828840fc713eaaf7d6046aad45e9a8ae52183394fb2ad',\n\
-						remotes = {'[2a06:9500:7:101::1] port 30006', '185.118.196.50 port 30006'},\n\
-					},\n\
-					bender = {\n\
-						key = '8c90793fc82e12282c220b262192a766fad40df9e61abdb0fbf439507ba2a032',\n\
-						remotes = {'[2a06:9500:7:102::1] port 15006', '185.118.197.50 port 15006'},\n\
-					},\n\
-					benderHMTU = {\n\
-						key = '4d5d4c8743250ed2f0f24b5dadb69a0418d6ac861ecaa17b745bf3b869c2303b',\n\
-						remotes = {'[2a06:9500:7:102::1] port 30006', '185.118.197.50 port 30006'},\n\
-					},\n\
 					horus = {\n\
 						key = '49d23541563e2b59ac6c78dbdc569946ad6c2bddccee68fd5108b45280c8b399',\n\
 						remotes = {'[2001:41d0:2:b0db:1::1] port 15006', '5.135.22.66 port 15006'},\n\
