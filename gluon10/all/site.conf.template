@@ -28,7 +28,6 @@
 		ibss = {
 			ssid = 'mesh-v15',
 			bssid = '+++meshmac+++',
-			mcast_rate = 6000,
 		},
 	},
 
@@ -41,7 +40,6 @@
 		ibss = {
 			ssid = 'mesh-v15',
 			bssid = '+++meshmac+++',
-			mcast_rate = 6000,
 		},
 	},
 
