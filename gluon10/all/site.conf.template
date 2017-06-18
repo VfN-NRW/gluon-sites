@@ -32,6 +32,10 @@
 			bssid = '+++meshmac+++',
 		},
 	},
+	dns = {
+		cacheentries = 5000,
+		servers = { '+++dnsserver+++', },
+	},
 	next_node = {
 		ip4 = '+++ip4nn+++',
 		ip6 = '+++ip6nn+++',
