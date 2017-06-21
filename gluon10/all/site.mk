@@ -23,7 +23,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-radvd \
 	gluon-setup-mode \
 	haveged \
-	iptables \
 	iwinfo \
 	gluon-legacy-https-stats \
 	gluon-offline-ssid
