@@ -67,6 +67,12 @@ ifeq ($(GLUON_TARGET),x86-64)
 		kmod-igb # APU2
 endif
 
+ifeq ($(GLUON_TARGET),ar71xx-tiny)
+	GLUON_SITE_PACKAGES += hostapd-mini
+else
+	GLUON_SITE_PACKAGES += hostapd
+endif
+
 # Variables set with ?= can be overwritten from the command line
 
 ##	GLUON_RELEASE
