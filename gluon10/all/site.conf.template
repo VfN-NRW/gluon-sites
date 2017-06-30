@@ -7,7 +7,6 @@
 	ntp_servers = {
 		'+++ntpserver+++'
 	},
-	dns_servers = '+++dnsserver+++',
 	regdom = 'DE',
 	wifi24 = {
 		channel = 5,
