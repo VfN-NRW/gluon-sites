@@ -15,9 +15,8 @@
 		ap = {
 			ssid = '+++ssid+++',
 		},
-		ibss = {
-			ssid = 'mesh-v15',
-			bssid = '+++meshmac+++',
+		mesh = {
+			id = '+++meshid+++',
 		},
 	},
 	wifi5 = {
@@ -26,9 +25,8 @@
 		ap = {
 			ssid = '+++ssid+++',
 		},
-		ibss = {
-			ssid = 'mesh-v15',
-			bssid = '+++meshmac+++',
+		mesh = {
+			id = '+++meshid+++',
 		},
 	},
 	dns = {
