@@ -25,7 +25,7 @@ msgstr ""
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
-"Er startet gerade neu und wird anschließend versuchen, sich mit anderen "
+"<p>Er startet gerade neu und wird anschließend versuchen, sich mit anderen "
 "Freifunk-Knoten in seiner Nähe zu verbinden. Du kannst ihn nun an einen "
 "geeigneten Ort stellen, damit er möglichst viele andere Knoten per Funk "
 "erreichen kann. Die von dir eingegebenen Daten, wie der Name des Knotens, die "
