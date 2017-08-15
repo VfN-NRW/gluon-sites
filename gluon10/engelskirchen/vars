@@ -32,7 +32,7 @@ fastdpeergroups="\n\
 					},\n\
 					vulcanus = {\n\
 						key = 'fcf330a48f9275aa521eefad7a366faf891cc37739657476083c3212d7af5dc7',\n\
-						remotes = {'[2001:4ba0:dead:b020::10] port 15224', '185.97.5.66 port 15341'},\n\
+						remotes = {'[2001:4ba0:dead:b020::10] port 15341', '185.97.5.66 port 15341'},\n\
 					},\n\
 					frigg = {\n\
 						key = 'd32ce14e01512604b34767f1431f6753c1c3a54316010c1c63819ca4233bdd98',\n\
